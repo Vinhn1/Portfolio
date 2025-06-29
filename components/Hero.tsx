@@ -1,5 +1,8 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import MagicButton from "./ui/MagicButton";
+import { FaLocationArrow } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -38,7 +41,36 @@ const Hero = () => {
       </div>
 
       {/* Khu vực dành cho nội dung chính của Hero section */}
-      {/* Có thể thêm text, buttons, hoặc các component khác ở đây */}
+      <div className="flex justify-center relative my-20 z-10">
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+          {/* Dòng text phụ (subtitle) */}
+          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+            Dynamic Web Magic with Next.js
+          </p>
+          {/**
+           *  Link: https://ui.aceternity.com/components/text-generate-effect
+           *  Tạo hiệu ứng đánh chữ từng ký tự một, giống như đang gõ
+           */}
+          <TextGenerateEffect
+            words="Transforming Concepts into Seamless User Experiences"
+            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+          />
+
+          {/* Personal introduction text - giới thiệu cá nhân */}
+          <p className="text-center md:tracking-wide mb-4 text-sm md:text-lg lg:text-2xl">
+            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia
+          </p>
+
+            {/* Button */}
+          <a href="#about">
+            <MagicButton 
+              title="Show my work" 
+              icon={<FaLocationArrow/>} 
+              position="right"
+            />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
