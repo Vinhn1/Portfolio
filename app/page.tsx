@@ -1,4 +1,5 @@
 import Clients from "@/components/Clients";
+import Experience from "@/components/Experience";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
@@ -25,9 +26,10 @@ export default function Home() {
         <Grid />
         {/* RecentProjects - Hiển thị danh sách các dự án gần đây */}
         <RecentProjects />
-        {/* Clients -   hiển thị phần đánh giá từ khách hàng (testimonials) và logo các công ty đã từng làm việc (companies) */}
+        {/* Clients - Hiển thị phần đánh giá từ khách hàng (testimonials) và logo các công ty đã từng làm việc (companies) */}
         <Clients />
-        {/* Experience */}
+        {/* Experience - Hiển thị danh sách kinh nghiệm làm việc */}
+        <Experience/>
         {/* Approach */}
         {/* Footer */}
       </div>
