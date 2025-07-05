@@ -1,3 +1,7 @@
+// Import JSON files
+import confettiData from "./confetti.json";
+import globeData from "./globe.json";
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -215,3 +219,6 @@ export const socialMedia = [
     img: "/link.svg",
   },
 ];
+
+// Export JSON data
+export { confettiData, globeData };

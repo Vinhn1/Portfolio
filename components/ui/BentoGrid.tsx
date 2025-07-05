@@ -5,7 +5,7 @@ import { BackgroundGradientAnimation } from "./GradienBg";
 import { GlobeDemo as GridGlobe } from "./GridGlobe";
 import Lottie from "react-lottie";
 import { useState } from "react";
-import animationData from "@/data/confetti.json";
+import { confettiData as animationData } from "@/data/index";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 

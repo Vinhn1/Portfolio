@@ -1,4 +1,4 @@
-import { projects } from "@/data";
+import { projects } from "@/data/index";
 import React from "react";
 import { FaLocationArrow } from "react-icons/fa";
 import { PinContainer } from "./ui/3d-pin";

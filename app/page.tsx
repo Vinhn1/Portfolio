@@ -1,3 +1,4 @@
+import Approach from "@/components/Approach";
 import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Grid from "@/components/Grid";
@@ -29,8 +30,9 @@ export default function Home() {
         {/* Clients - Hiển thị phần đánh giá từ khách hàng (testimonials) và logo các công ty đã từng làm việc (companies) */}
         <Clients />
         {/* Experience - Hiển thị danh sách kinh nghiệm làm việc */}
-        <Experience/>
-        {/* Approach */}
+        <Experience />
+        {/* Approach - Hiển thị 3 giai đoạn trong quy trình làm việc (Planning → Development → Launch) */}
+        <Approach />
         {/* Footer */}
       </div>
     </main>

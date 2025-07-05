@@ -2,7 +2,7 @@
 // Chức năng: Hiển thị phần giới thiệu (about) với layout dạng lưới, sử dụng các item từ dữ liệu và component BentoGrid
 
 // Import dữ liệu các item cho grid từ thư mục data
-import { gridItems } from "@/data";
+import { gridItems } from "@/data/index";
 // Import các component liên quan đến layout grid
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 
