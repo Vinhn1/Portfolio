@@ -11,11 +11,11 @@ import React from 'react'
  *  - ortherClasses: Class tuỳ chỉnh thêm cho nút
  */
 const MagicButton = ({title, icon, position, handlClick, ortherClasses} : {
-  title: String;
+  title: string;
   icon: React.ReactNode,
-  position: String;
+  position: string;
   handlClick?: () => void;
-  ortherClasses?: String;
+  ortherClasses?: string;
 }) => {
   return (
     // Khối bao ngoài cho nút

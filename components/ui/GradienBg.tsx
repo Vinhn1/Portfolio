@@ -72,7 +72,7 @@ export const BackgroundGradientAnimation = ({
     document.body.style.setProperty("--pointer-color", pointerColor);
     document.body.style.setProperty("--size", size);
     document.body.style.setProperty("--blending-value", blendingValue);
-  }, []);
+  }, [gradientBackgroundStart, gradientBackgroundEnd, firstColor, secondColor, thirdColor, fourthColor, fifthColor, pointerColor, size, blendingValue]);
 
   // Hiệu ứng di chuyển pointer mượt mà
   useEffect(() => {
@@ -87,7 +87,7 @@ export const BackgroundGradientAnimation = ({
       )}px, ${Math.round(curY)}px)`;
     }
     move();
-  }, [tgX, tgY]);
+  }, [curX, curY, tgX, tgY]);
 
   // Xử lý sự kiện di chuột để cập nhật vị trí pointer
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
