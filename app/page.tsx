@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { FaHome } from "react-icons/fa";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -34,6 +35,8 @@ export default function Home() {
         {/* Approach - Hiển thị 3 giai đoạn trong quy trình làm việc (Planning → Development → Launch) */}
         <Approach />
         {/* Footer */}
+        <Footer/>
+
       </div>
     </main>
   );
